@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color:#9CAEBA;
+  background:#31373B;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.calculator {
+  width: 250px;
+  margin: auto;
+  text-align: center;
+
+}
+
+input {
+  width: 100%;
+  padding: 0 10px;
+  color:#9CAEBA;
+  background-color:transparent;
+  font-size: 24px;
+  direction: rtl;
+  
+}
+
+.input-cursor {
+  width: 100%;
+  direction: rtl;
+  border-right:1px solid #9CAEBA;
+  animation: cursor-blink 1s infinite step-start;
+}
+
+@keyframes cursor-blink {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+.buttons{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+
+.buttons button {
+  width: 56px;
+  height: 56px;
+  font-size: 20px;
+}
+
+.buttons-color{
+  background-color: #9CAEBA !important;
+  color:#31373B;
+  
+}
+
+
+.buttons-delete {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+
+}
