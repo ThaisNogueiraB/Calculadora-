@@ -1,5 +1,5 @@
 <h1>Calculadora</h1>
-Este é um projeto de calculadora simples desenvolvido em React. É uma aplicação de demonstração para mostrar como construir uma calculadora básica usando React.
+Este é um projeto de calculadora simples desenvolvido em React. 
 
 <h2>Funcionalidades</h2>
 
